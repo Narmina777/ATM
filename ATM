@@ -1,0 +1,39 @@
+using System;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Console.Write("Enter the amount in  manat: ");
+        int amount = int.Parse(Console.ReadLine());
+
+        int num200 = amount / 200;
+        amount = amount % 200;
+
+        int num100 = amount / 100;
+        amount = amount % 100;
+
+        int num50 = amount / 50;
+        amount = amount % 50;
+
+        int num20 = amount / 20;
+        amount = amount % 20;
+
+        int num10 = amount / 10;
+        amount = amount % 10;
+
+        int num5 = amount / 5;
+        amount = amount % 5;
+
+        int num1 = amount;
+
+        Console.WriteLine("The amount in parts: ");
+        Console.WriteLine("200 AZN: " + num200);
+        Console.WriteLine("100 AZN: " + num100);
+        Console.WriteLine("50 AZN: " + num50);
+        Console.WriteLine("20 AZN: " + num20);
+        Console.WriteLine("10 AZN: " + num10);
+        Console.WriteLine("5 AZN: " + num5);
+        Console.WriteLine("1 AZN: " + num1);
+    }
+}
